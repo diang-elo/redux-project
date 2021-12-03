@@ -15,6 +15,34 @@ export function Counter() {
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
 
+ 
+  var answers = [];
+  const current = ""
+
+  var question = "";
+  if (count === 0){
+    question = "Who?";
+  }
+  else if (count === 1){
+    question = "What?";
+  }
+  else if (count === 2){
+    question = "When?";
+  }
+  else if (count === 3){
+    question = "Where?";
+  }
+
+  let btnGet = document.querySelector('#btn-get')
+  let InputGet = document.querySelector('#input-get')
+
+  btnGet.addEventListener('click', () =>{
+    answers[count] = InputGet.value;
+    localStorage.setItem(current.toString(),InputGet.value);
+    console.log(answers)
+  });
+
+  
   const incrementValue = Number(incrementAmount) || 0;
 
   return (
@@ -25,27 +53,31 @@ export function Counter() {
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
         >
-          -
+          Back
         </button>
-        <span className={styles.value}>{count}</span>
+        <span className={styles.value}>{question}</span>
         <button
           className={styles.button}
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
+          
         >
-          +
+          Next
         </button>
       </div>
       <div className={styles.row}>
         <input
           className={styles.textbox}
           aria-label="Set increment amount"
-          value={incrementAmount}
-          onChange={(e) => setIncrementAmount(e.target.value)}
+          id="input-get"
+          //value={incrementAmount}
+          //onChange={(e) => setIncrementAmount(e.target.value)}
         />
         <button
           className={styles.button}
-          onClick={() => dispatch(incrementByAmount(incrementValue))}
+          id="btn-get"
+          
+          //onClick={() => dispatch(incrementByAmount(incrementValue))}
         >
           Add Amount
         </button>
