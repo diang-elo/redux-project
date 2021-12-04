@@ -13,6 +13,7 @@ function App() {
 
   if (count === 4){
     document.getElementById('sentence-result').style.display = 'inline';
+    //document.getElementById('sentence-result').style.visibility = 'visible';
   }else if (count <4 && count> 1)
   {
     document.getElementById('sentence-result').style.display = 'none';
