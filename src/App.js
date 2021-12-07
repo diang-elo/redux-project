@@ -28,48 +28,62 @@ function App() {
           <Todos />.
         </p>
         <span>
-          <span>Learn </span>
+          <span>Extra Info -- </span>
           <a
             className="App-link"
-            href="https://reactjs.org/"
+            href="https://youtu.be/vOpnxXQiCH4"
             target="_blank"
             rel="noopener noreferrer"
           >
-            React
+            Demo
           </a>
-          <span>, </span>
+          <span> -- </span>
           <a
             className="App-link"
-            href="https://redux.js.org/"
+            href="https://github.com/diang-elo/redux-project"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Redux
+            Git Repo
           </a>
-          <span>, </span>
+          <span> -- </span>
           <a
             className="App-link"
-            href="https://redux-toolkit.js.org/"
+            href="https://www.diangelo.tech/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Redux Toolkit
+            Portfolio
           </a>
-          ,<span> and </span>
+          <span> -- </span>
           <a
             className="App-link"
-            href="https://react-redux.js.org/"
+            href="https://thinkeasy.cz/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            React Redux
+            Think Easy
           </a>
         </span>
       </header>
-      <div id="image-container">
-        <div id="pot">
+
+      <div className = "bubbles">
+        <img src="https://i.ibb.co/VW320gj/logo.png" alt="lightBublb1"/>
+        <img src="https://i.ibb.co/FYW5jVG/bozz2.png" alt="boss1"/>
+        <img src="https://i.ibb.co/VW320gj/logo.png" alt="lightBublb2"/>
+        <img src="https://i.ibb.co/q0b0LXS/bozz.png" alt="boss2"/>
+        <img src="https://i.ibb.co/VW320gj/logo.png" alt="lightBublb3"/>
+        <img src="https://i.ibb.co/QPb6rww/bozz3.png" alt="boss3"/>
+        <img src="https://i.ibb.co/VW320gj/logo.png" alt="lightBublb4"/>
+        
+      </div>
+
+
+
+      <div className="image-container">
+        <div className="pot">
           
-          <img id="bossnme"src="https://i.ibb.co/vsVWpdP/Bosses-and-me.png" width="150px" height="150px" />
+          <img id="bossnme"src="https://i.ibb.co/vsVWpdP/Bosses-and-me.png" alt="allofus" width="150px" height="150px" />
         </div>
         
       </div>

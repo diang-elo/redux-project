@@ -80,3 +80,7 @@
 .result{
   display: none;
 }
+
+.nextbtn{
+  visibility: hidden;
+}

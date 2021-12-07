@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {add} from '../todos/TodosSlice';
+import {add, del0, del1, del2, del3} from '../todos/TodosSlice';
 import { selectTodos } from "../todos/TodosSlice"
 
 import { useSelector, useDispatch } from 'react-redux';
@@ -46,7 +46,10 @@ export function Counter() {
     console.log(answers)
   });
   */
-  
+  if (count === 4) {
+    document.getElementById('next-btn').style.visibility = 'visible';
+    //document.getElementById('sentence-result').style.visibility = 'visible';
+  } 
   //const incrementValue = Number(incrementAmount) || 0;
 
   return (
@@ -60,7 +63,9 @@ export function Counter() {
           Back
         </button>
         <span className={styles.value}>{question}</span>
+        <div id="next-btn" className={styles.nextbtn}>
         <button
+          
           className={styles.button}
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
@@ -68,6 +73,7 @@ export function Counter() {
         >
           Next
         </button>
+        </div>
       </div>
       <div className={styles.row}>
         <input
@@ -83,9 +89,23 @@ export function Counter() {
           className={styles.button}
           id="btn-get"
           onClick={() => {
+            if(todo[count]){
+              if(count===0){dispatch(del0(todoTxt))
+                setTodoTxt('')
+                dispatch(increment())}
+              if(count===1){dispatch(del1(todoTxt))
+                setTodoTxt('')
+                dispatch(increment())}
+              if(count===2){dispatch(del2(todoTxt))
+                setTodoTxt('')
+                dispatch(increment())}
+              if(count===3){dispatch(del3(todoTxt))
+                setTodoTxt('')
+                dispatch(increment())}
+            }else{
             dispatch(add(todoTxt))
             dispatch(increment())
-            setTodoTxt('')
+            setTodoTxt('')}
           }}
           //onClick={() => dispatch(incrementByAmount(incrementValue))}
         >

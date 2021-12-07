@@ -7,14 +7,22 @@ const todoSlice = createSlice({
         add(state,{ payload }){
             state.push(payload)
         },
-        del(state, {payload}){
-           //return state.filter(({x}) => state.splice(payload, 1, x))
-           return state.filter(({id}) => id !== payload)
+        del0(state, {payload}){
+            state.splice(0,1,payload)
+        },
+        del1(state, {payload}){
+            state.splice(1,1,payload)
+        },
+        del2(state, {payload}){
+            state.splice(2,1,payload)
+        },
+        del3(state, {payload}){
+            state.splice(3,1,payload)
         },
     },
 })
 
-export const { add, del } = todoSlice.actions
+export const { add, del0, del1, del2, del3 } = todoSlice.actions
 
 export const selectTodos = ({ todos }) => todos
 
