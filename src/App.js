@@ -1,32 +1,31 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 import Todos from './features/todos/Todos'
-import {selectCount} from './features/counter/counterSlice'
+import { selectCount } from './features/counter/counterSlice'
 import styles from './features/counter/Counter.module.css';
 // Edit <code>src/App.js</code> and save to reload.
 function App() {
 
   const count = useSelector(selectCount);
 
-  if (count === 4){
+  if (count === 4) {
     document.getElementById('sentence-result').style.display = 'inline';
     //document.getElementById('sentence-result').style.visibility = 'visible';
-  }else if (count <4 && count> 1)
-  {
+  } else if (count < 4 && count > 1) {
     document.getElementById('sentence-result').style.display = 'none';
   }
-  
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p id="sentence-result" className={styles.result}>
-         
-          <Todos/>.
+
+          <Todos />.
         </p>
         <span>
           <span>Learn </span>
@@ -67,7 +66,14 @@ function App() {
           </a>
         </span>
       </header>
-      
+      <div id="image-container">
+        <div id="pot">
+          
+          <img id="bossnme"src="https://i.ibb.co/vsVWpdP/Bosses-and-me.png" width="150px" height="150px" />
+        </div>
+        
+      </div>
+
     </div>
   );
 }

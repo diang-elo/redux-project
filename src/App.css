@@ -18,12 +18,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /*justify-content: center; */
   font-size: calc(10px + 2vmin);
 }
 
 .App-link {
-  color: rgb(112, 76, 182);
+  color: #fc6454;
 }
 
 @keyframes App-logo-float {
@@ -35,5 +35,40 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+#image-container{
+  
+ 
+}
+#bossnme{
+  transform: scaleX(-1);
+}
+#pot {
+  bottom: 10%;
+  position: absolute;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 15s;
+  
+}
+@keyframes run {
+  0% {
+    left: 0;
+  }
+  48% {
+    -webkit-transform: rotateY(0deg); 
+  }
+  50% { 
+    left: calc(100% - 150px);
+    -webkit-transform: rotateY(180deg); 
+  }
+  98% {
+    -webkit-transform: rotateY(180deg); 
+  }
+  100% {
+    left: 0;    
+     -webkit-transform: rotateY(0deg);
   }
 }

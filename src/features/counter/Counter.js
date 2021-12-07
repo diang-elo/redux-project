@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import {add} from '../todos/TodosSlice';
-import Todos from '../todos/Todos'
+import { selectTodos } from "../todos/TodosSlice"
+
 import { useSelector, useDispatch } from 'react-redux';
 import {
   decrement,
   increment,
-  incrementByAmount,
-  incrementAsync,
-  incrementIfOdd,
   selectCount,
 } from './counterSlice';
 import styles from './Counter.module.css';
@@ -17,10 +15,9 @@ export function Counter() {
   const dispatch = useDispatch();
   //const [incrementAmount, setIncrementAmount] = useState('2');
   const [todoTxt, setTodoTxt] = useState('');
-
+  const todo = useSelector(selectTodos);
  
-  var answers = [];
-  const current = ""
+  console.log(todo);
 
   var question = "";
   if (count === 0){
