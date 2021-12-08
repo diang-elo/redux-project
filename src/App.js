@@ -80,13 +80,13 @@ function App() {
 
 
 
-      <div className="image-container">
+     
         <div className="pot">
           
           <img id="bossnme"src="https://i.ibb.co/vsVWpdP/Bosses-and-me.png" alt="allofus" width="150px" height="150px" />
         </div>
         
-      </div>
+      
 
     </div>
   );

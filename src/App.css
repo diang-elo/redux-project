@@ -94,10 +94,7 @@
   animation-delay: 1.5s;
 }
 
-#image-container{
-  
- 
-}
+
 #bossnme{
   transform: scaleX(-1);
 }
@@ -105,11 +102,11 @@
   
   
   bottom: 10%;
-  
+  z-index: 1;
   position: absolute;
   animation: linear infinite;
   
-  opacity: 0%;
+  opacity: 1%;
   animation-name: run;
   animation-delay: 10s;
   animation-duration: 20s;
@@ -127,19 +124,19 @@
   }
   48% {
     opacity: 100%;
-    -webkit-transform: rotateY(0deg); 
+    transform: rotateY(0deg); 
   }
   50% { 
     left: calc(100% - 150px);
-    -webkit-transform: rotateY(180deg); 
+    transform: rotateY(180deg); 
     opacity: 100%;
   }
   98% {
-    -webkit-transform: rotateY(180deg); 
+    transform: rotateY(180deg); 
     opacity: 100%;
   }
   100% {
     left: 0;    
-     -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
 }
