@@ -103,16 +103,16 @@
 }
 .pot {
   
-  transition-delay: 2s;
+  
   bottom: 10%;
   
   position: absolute;
-  -webkit-animation: linear infinite;
+  animation: linear infinite;
   
   opacity: 0%;
-  -webkit-animation-name: run;
+  animation-name: run;
   animation-delay: 10s;
-  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
   animation-iteration-count: 1
   
   
