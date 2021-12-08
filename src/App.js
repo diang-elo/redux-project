@@ -67,6 +67,12 @@ function App() {
         </span>
       </header>
 
+
+      <div className="pot">
+          
+          <img id="bossnme"src="https://i.ibb.co/tZjMH3b/Bosses-and-me.png" alt="allofus" width="150px" height="150px" />
+        </div>
+        
       <div className = "bubbles">
         <img src="https://i.ibb.co/VW320gj/logo.png" alt="lightBublb1"/>
         <img src="https://i.ibb.co/FYW5jVG/bozz2.png" alt="boss1"/>
@@ -81,10 +87,7 @@ function App() {
 
 
      
-        <div className="pot">
-          
-          <img id="bossnme"src="https://i.ibb.co/vsVWpdP/Bosses-and-me.png" alt="allofus" width="150px" height="150px" />
-        </div>
+        
         
       
 
