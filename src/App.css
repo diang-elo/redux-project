@@ -100,17 +100,13 @@
 }
 .pot{
   bottom: 10%;
-  z-index: 3;
   position: absolute;
   animation: linear infinite;
-  
   opacity: 100%;
   animation-name: run;
   animation-delay: 10s;
   animation-duration: 20s;
   animation-iteration-count: 1
-  
-  
 }
 @keyframes run {
   0% {
