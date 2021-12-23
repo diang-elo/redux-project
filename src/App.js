@@ -68,18 +68,15 @@ function App() {
       </header>
 
 
-      <div className="pot">
-          
-          <img id="bossnme"src="https://i.ibb.co/tZjMH3b/Bosses-and-me.png" alt="allofus" width="150px" height="150px" />
-        </div>
+      
         
       <div className = "bubbles">
         <img src="https://i.ibb.co/VW320gj/logo.png" alt="lightBublb1"/>
-        <img src="https://i.ibb.co/FYW5jVG/bozz2.png" alt="boss1"/>
+        <img src="https://i.ibb.co/VW320gj/logo.png" alt="boss1"/>
         <img src="https://i.ibb.co/VW320gj/logo.png" alt="lightBublb2"/>
-        <img src="https://i.ibb.co/q0b0LXS/bozz.png" alt="boss2"/>
+        <img src="https://i.ibb.co/VW320gj/logo.png" alt="boss2"/>
         <img src="https://i.ibb.co/VW320gj/logo.png" alt="lightBublb3"/>
-        <img src="https://i.ibb.co/QPb6rww/bozz3.png" alt="boss3"/>
+        <img src="https://i.ibb.co/VW320gj/logo.png" alt="boss3"/>
         <img src="https://i.ibb.co/VW320gj/logo.png" alt="lightBublb4"/>
         
       </div>
